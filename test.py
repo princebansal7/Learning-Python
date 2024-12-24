@@ -8,5 +8,3 @@ def MainProgram(f):
 
 def program_2():
     print("Python", end=' ')
-
-``
