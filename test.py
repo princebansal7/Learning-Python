@@ -1,18 +1,12 @@
-class one:
-    def __init__(self, name):
-        self.name = name
-        self.time = 0
-
-    def work(self, time):
-        self.time = time-1
-
-
-class two(one):
-    def __init__(self, name, time):
-        self.time = time+1
-        self.work(time)
-        super().__init__(name)
+def MainProgram(f):
+    def program_1():
+        print("1", end=' ')
+        f()
+        print("2")
+        return program_1
 
 
-d = two("Mike", 2)
-print(d.time)
+def program_2():
+    print("Python", end=' ')
+
+``
