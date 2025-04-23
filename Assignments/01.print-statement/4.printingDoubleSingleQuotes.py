@@ -2,4 +2,9 @@
 print("Prince's Code")
 
 # printing double quotes too
-print("\"Prince's Code\"")
+
+# print("\"Prince's Code\"")
+
+# or
+
+print('"Prince\'s Code"')

@@ -1,6 +1,6 @@
 value = input("Enter string: ")
 
-isThere = 'my' in value
+isThere = "my" in value
 
 print(isThere)
 # OR

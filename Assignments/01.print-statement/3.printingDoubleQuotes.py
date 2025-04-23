@@ -1,1 +1,5 @@
-print(" \"Prince\"  ")
+# print(" \"Prince\"  ")
+
+# or
+
+print(' "Prince"  ')

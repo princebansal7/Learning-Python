@@ -1,7 +1,7 @@
 a = 10
 b = 69.0
-c = 'M'
-e = 6+9j
+c = "M"
+e = 6 + 9j
 f = True
 g = False
 h = None
