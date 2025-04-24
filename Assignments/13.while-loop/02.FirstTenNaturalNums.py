@@ -3,6 +3,7 @@ while i <= 10:
     print(i, end=" ")
     i += 1
 print()
+
 # with user input
 
 num = int(input("Enter N: "))
