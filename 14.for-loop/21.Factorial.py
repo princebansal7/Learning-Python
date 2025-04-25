@@ -9,4 +9,4 @@ else:
     print("factorial is:", fact)
 
 # n = 4
-# 4! = 1*2*3*4 = 24
+# 4! = 1 * 2 * 3 * 4 = 24
