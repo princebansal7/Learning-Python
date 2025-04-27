@@ -5,9 +5,11 @@ for i in l:
     square = i**2
     listOfSquares.append(square)
 print("Squared list is:\n", listOfSquares)
-
+print()
 
 # way-2
 
-ans = [element**2 for element in l]
+print("Enter list numbers (separated by commas): ")
+userInputList = [int(i) for i in input().split(",")]
+ans = [element**2 for element in userInputList]
 print("Squared list is:\n", ans)

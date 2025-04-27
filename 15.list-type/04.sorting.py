@@ -1,8 +1,13 @@
-l = [1, 12, 3, 24, 52, 69, 7, -8, 19, 10]
+print("Enter list numbers (separated by commas): ")
+userInputList = [int(i) for i in input().split(",")]
+
 print("Sorting is Descending order:")
-l.sort(reverse=True)
-print(l)
+userInputList.sort(reverse=True)
+print(userInputList)
+print()
+
 
 print("Sorting is Ascending order:")
-l.sort()
-print(l)
+userInputList.sort()
+print(userInputList)
+print()
