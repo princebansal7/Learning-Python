@@ -32,7 +32,26 @@
 #     print(i)
 #     i += 1
 
-for x in range(-5, 5):
-    print(x, end=" ")
 
-print()
+# a = 0
+# for b in range(0, 10, 2):
+#     a = a + b + 1
+
+# print(a)
+
+
+def function_a(n):
+    if n == 0:
+        return 1
+    else:
+        return n * function_b(n - 1)
+
+
+def function_b(n):
+    if n == 0:
+        return 1
+    else:
+        return n * function_a(n - 1)
+
+
+print(function_a(4))
