@@ -1,15 +1,38 @@
-a = 10
+def sqaure(n):
+    return n * n
 
 
-def f1():
-    print("global var (a):", a)
-    x = 20
-    print("local var (x):", x)
+mapObject = map(
+    sqaure, [1, 2, 3, 4]
+)  # map returns map object which is 'lazy iterator' => can be consumed once then becomes empty
+for e in mapObject:
+    print(e, end=" ")
+print()
+
+l = list(mapObject)
+print(l)
 
 
-f1()
-print("global var (a):", a)
-# print("local var (x):", x)  # Error as x only exists in f1 body
+# def f(**d):
+#     for k, v in d.items():
+#         print(k, ":", v)
+
+
+# f(name="Prince", age=20)
+# f(name="Naruto", age=20, marks=30)
+# f(name="Ramesh", age=20, emp_id="10b7")
+
+
+# a = 10
+# def f1():
+#     print("global var (a):", a)
+#     x = 20
+#     print("local var (x):", x)
+
+
+# f1()
+# print("global var (a):", a)
+# # print("local var (x):", x)  # Error as x only exists in f1 body
 
 
 #######################
@@ -70,13 +93,3 @@ print("global var (a):", a)
 
 
 # print(function_a(4))
-
-
-def f(**d):
-    for k, v in d.items():
-        print(k, ":", v)
-
-
-f(name="Prince", age=20)
-f(name="Naruto", age=20, marks=30)
-f(name="Ramesh", age=20, emp_id="10b7")
