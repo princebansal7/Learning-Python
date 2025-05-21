@@ -1,3 +1,18 @@
+a = 10
+
+
+def f1():
+    print("global var (a):", a)
+    x = 20
+    print("local var (x):", x)
+
+
+f1()
+print("global var (a):", a)
+# print("local var (x):", x)  # Error as x only exists in f1 body
+
+
+#######################
 # str = "abcdddd"
 # for x in str:
 #     if(x=="r"):
@@ -40,18 +55,28 @@
 # print(a)
 
 
-def function_a(n):
-    if n == 0:
-        return 1
-    else:
-        return n * function_b(n - 1)
+# def function_a(n):
+#     if n == 0:
+#         return 1
+#     else:
+#         return n * function_b(n - 1)
 
 
-def function_b(n):
-    if n == 0:
-        return 1
-    else:
-        return n * function_a(n - 1)
+# def function_b(n):
+#     if n == 0:
+#         return 1
+#     else:
+#         return n * function_a(n - 1)
 
 
-print(function_a(4))
+# print(function_a(4))
+
+
+def f(**d):
+    for k, v in d.items():
+        print(k, ":", v)
+
+
+f(name="Prince", age=20)
+f(name="Naruto", age=20, marks=30)
+f(name="Ramesh", age=20, emp_id="10b7")
