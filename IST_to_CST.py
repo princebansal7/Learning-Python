@@ -2,7 +2,8 @@ from datetime import datetime
 import pytz
 
 # Define input
-input_str = "Sun 25/05/2025 9:43 am"
+input_str = "Mon 26/05/2025 06:00 AM"
+print("IST Time:", input_str)
 
 # Step 1: Parse input to datetime object
 ist_format = "%a %d/%m/%Y %I:%M %p"
@@ -18,4 +19,4 @@ cst_time = ist_time.astimezone(cst_zone)
 
 # Step 4: Format the output as required
 output_str = cst_time.strftime("%a %d/%m/%Y %I:%M %p")
-print(output_str)
+print("CST TIME:", output_str)
