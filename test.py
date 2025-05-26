@@ -1,16 +1,28 @@
-def sqaure(n):
-    return n * n
+class Test:
+
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+        # a = 10
 
 
-mapObject = map(
-    sqaure, [1, 2, 3, 4]
-)  # map returns map object which is 'lazy iterator' => can be consumed once then becomes empty
-for e in mapObject:
-    print(e, end=" ")
-print()
+t = Test(10, 20)
+print(t.a, t.b)
 
-l = list(mapObject)
-print(l)
+
+# def sqaure(n):
+#     return n * n
+
+
+# mapObject = map(
+#     sqaure, [1, 2, 3, 4]
+# )  # map returns map object which is 'lazy iterator' => can be consumed once then becomes empty
+# for e in mapObject:
+#     print(e, end=" ")
+# print()
+
+# l = list(mapObject)
+# print(l)
 
 
 # def f(**d):
