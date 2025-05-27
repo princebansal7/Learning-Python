@@ -1,14 +1,24 @@
-class Test:
+class Person:
 
-    def __init__(self, a, b):
-        self.a = a
-        self.b = b
-        # a = 10
+    def __init__(self, n, a):
+        self.name = n
+        self.age = a
 
 
-t = Test(10, 20)
-print(t.a, t.b)
+class Student(Person):
+    def __init__(self, n, a, r):
+        Person.__init__(
+            self, n, a
+        )  # calling using class object (need to pass instance object (s1))
+        super.__init__(
+            n, a
+        )  # calling using super() which returns Parent's class instance object => no need to pass self explicitly
+        self.rollnum = r
 
+
+# in both cases: object of student class have the variables and no instance of Person is created
+
+s1 = Student("Ramesh", 21, 990)
 
 # def sqaure(n):
 #     return n * n
