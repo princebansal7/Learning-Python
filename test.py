@@ -1,8 +1,12 @@
 try:
-    a = int(input("Enter number: "))
-    print(a)
+    a = int(input("Enter 1st number: "))
+    b = int(input("Enter 2nd number: "))
+    div = a / b
+    print(div)
 except ValueError as e:
     print("Entered value is not a number:")
+    print(e)
+except ZeroDivisionError as e:
     print(e)
 print("Exception independent code")
 
