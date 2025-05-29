@@ -1,24 +1,32 @@
-class Person:
+try:
+    a = int(input("Enter number: "))
+    print(a)
+except ValueError as e:
+    print("Entered value is not a number:")
+    print(e)
+print("Exception independent code")
 
-    def __init__(self, n, a):
-        self.name = n
-        self.age = a
+
+# class Person:
+
+#     def __init__(self, n, a):
+#         self.name = n
+#         self.age = a
 
 
-class Student(Person):
-    def __init__(self, n, a, r):
-        Person.__init__(
-            self, n, a
-        )  # calling using class object (need to pass instance object (s1))
-        super.__init__(
-            n, a
-        )  # calling using super() which returns Parent's class instance object => no need to pass self explicitly
-        self.rollnum = r
-
+# class Student(Person):
+#     def __init__(self, n, a, r):
+#         Person.__init__(
+#             self, n, a
+#         )  # calling using class object (need to pass instance object (s1))
+#         super.__init__(
+#             n, a
+#         )  # calling using super() which returns Parent's class instance object => no need to pass self explicitly
+#         self.rollnum = r
 
 # in both cases: object of student class have the variables and no instance of Person is created
 
-s1 = Student("Ramesh", 21, 990)
+# s1 = Student("Ramesh", 21, 990)
 
 # def sqaure(n):
 #     return n * n
