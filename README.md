@@ -67,7 +67,7 @@
        ...
        ...
        ```
-   - To Deactivate the virtual env
+   - To Deactivate the virtual env use below command or just kill the terminal
        ```sh
        deactivate
        ```
