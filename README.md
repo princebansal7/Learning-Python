@@ -1,4 +1,4 @@
-## Learning Python (Basics to OOP)
+## Learning Python
 
 ### coda useful commands
 
