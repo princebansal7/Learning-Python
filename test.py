@@ -1,14 +1,21 @@
-try:
-    a = int(input("Enter 1st number: "))
-    b = int(input("Enter 2nd number: "))
-    div = a / b
-    print(div)
-except ValueError as e:
-    print("Entered value is not a number:")
-    print(e)
-except ZeroDivisionError as e:
-    print(e)
-print("Exception independent code")
+a = 5
+print(id(a))
+a = 10
+print(id(a))
+a = 5
+print(id(a))
+
+# try:
+#     a = int(input("Enter 1st number: "))
+#     b = int(input("Enter 2nd number: "))
+#     div = a / b
+#     print(div)
+# except ValueError as e:
+#     print("Entered value is not a number:")
+#     print(e)
+# except ZeroDivisionError as e:
+#     print(e)
+# print("Exception independent code")
 
 
 # class Person:
