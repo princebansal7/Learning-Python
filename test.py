@@ -1,9 +1,17 @@
-a = 5
-print(id(a))
-a = 10
-print(id(a))
-a = 5
-print(id(a))
+
+"""
+Sample and test code is written here
+"""
+ 
+
+# print(~(-5))
+
+# a = 5
+# print(id(a))
+# a = 10
+# print(id(a))
+# a = 5
+# print(id(a))
 
 # try:
 #     a = int(input("Enter 1st number: "))
