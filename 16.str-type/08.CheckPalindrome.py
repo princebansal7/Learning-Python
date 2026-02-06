@@ -17,6 +17,12 @@ print("Palindrome" if userInputString == userInputString[::-1] else "Not Palindr
 print()
 print("user string in uppercase: ", end=" ")
 print(userInputString.upper())
+print("check if user string is uppercase: ", end=" ")
+print(userInputString.isupper())
+print("check if user string is lowercare: ", end=" ")
+print(userInputString.lower())
+print("user string in lowercare: ", end=" ")
+print(userInputString.islower())
 print()
 
 # input: "madam"
