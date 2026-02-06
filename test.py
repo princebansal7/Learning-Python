@@ -2,7 +2,20 @@
 """
 Sample and test code is written here
 """
- 
+
+
+start=10
+n = 50
+
+def getEvenInRange(start,n):
+    while start<=n:
+        if start%2==0:
+            print(start, end=" ")
+        start+=1
+
+getEvenInRange(start,n)
+print()
+
 
 # print(~(-5))
 
